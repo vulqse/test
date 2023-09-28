@@ -1,4 +1,4 @@
-name: ghas
+name: Super-linter
 
 on: push
 
@@ -10,8 +10,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Run ghas
-      uses: github/ghas@v3
+    - name: Run Super-linter
+      uses: github/super-linter@v3
       env:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
